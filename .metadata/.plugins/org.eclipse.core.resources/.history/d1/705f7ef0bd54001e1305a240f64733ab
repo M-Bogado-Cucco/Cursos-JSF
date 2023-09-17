@@ -1,0 +1,33 @@
+package yt_luiz_alberto;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+
+@ManagedBean
+@SessionScoped
+public class PessoaBean {
+
+	private Pessoa pessoa;
+	private PessoaMapper mapper = new PessoMapper();
+
+	@PostConstruct
+	public void init() {
+		pessoa = new Pessoa();
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	
+	public List<Pessoa> getPessoas() {
+		return mapper.getPessoas();
+	}
+	
+
+}

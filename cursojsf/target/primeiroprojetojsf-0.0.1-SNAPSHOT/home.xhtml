@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"	
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<!--<head>  ISO-8859-1
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Primeira Página</title>
+</head>
+
+acessar assim, para não dar errado:
+http://localhost:8081/primeiroprojetojsf/faces/home.xhtml?
+
+DevMedia
+http://localhost:8081/primeiroprojetojsf/faces/devMedia/datas/data_range.xhtml?
+
+<body></body>
+-->
+
+<h:head>
+<title>Primeira Página JSF</title>
+</h:head>
+
+<h:body>
+	
+	
+	<h:form id="formPessoa">
+	
+		<h2>Olá JSF</h2>
+		<p>
+			<label>Nome: </label>
+			<h:inputText id="campoNome" value="#{pessoaBean.nome}"></h:inputText>
+			
+		</p>
+
+		<p>
+			<label>Sobrenome: </label>
+			<h:inputText id="sobrenome" value="#{pessoaBean.sobrenome}" />
+			
+		</p>
+		
+		<h:commandButton value="Mostrar" action="#{pessoaBean.mostrarNome}" />
+		
+		
+		<h:outputText value="#{pessoaBean.nomeCompleto}"></h:outputText>
+		
+		
+		
+
+
+	</h:form>
+
+</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

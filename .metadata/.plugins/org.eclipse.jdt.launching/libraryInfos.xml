@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="/usr/lib/jvm/java-17-oracle" version="17.0.1"/>
+    <libraryInfo home="/home/marcelobc/.sdkman/candidates/java/11.0.20.1-tem" version="11.0.20.1"/>
+    <libraryInfo home="/home/marcelobc/.sdkman/candidates/java/17.0.8-tem" version="17.0.8"/>
+</libraryInfos>

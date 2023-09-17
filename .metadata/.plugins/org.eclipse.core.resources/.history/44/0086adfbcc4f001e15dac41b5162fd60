@@ -1,0 +1,5 @@
+package devMedia_05_jsf.autoComplete;
+
+public class AutoCompleteBean {
+
+}

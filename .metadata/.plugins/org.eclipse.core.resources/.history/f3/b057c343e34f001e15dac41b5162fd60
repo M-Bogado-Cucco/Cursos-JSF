@@ -1,0 +1,79 @@
+package devMedia_05_jsf.autoComplete;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean(name="autoCompleteBean2")
+@SessionScoped
+public class AutoComplete_2_Bean {
+	
+	List<String> contatos;
+	
+	public AutoComplete_2_Bean() {
+		
+		contatos = new ArrayList<>();
+		
+		contatos.add("wesley@devmedia.com.br");
+		contatos.add("alberto@devmedia.com.br");
+		contatos.add("joao@devmedia.com.br");
+		contatos.add("luciano@devmedia.com.br");
+		contatos.add("marta@devmedia.com.br");
+		contatos.add("mballey@devmedia.com.br");
+	}
+	
+	private List<String> contatosSelecionados;
+	
+	
+	public List<String> getContatosSelecionados() {
+		return contatosSelecionados;
+	}
+	
+	public void setContatosSelecionados(List<String> contatosSelecionados) {
+		this.contatosSelecionados = contatosSelecionados;
+	}
+	
+	//método para buscar pela lista de contatos
+	public List<String> todosContatos(String emails) {
+		
+		List<String> contatosSelecionados = new ArrayList<>();
+		
+		for(String contato : contatos) {
+			if(contato.toUpperCase().contains(emails.toUpperCase())) {
+				contatosSelecionados.add(contato);
+			}
+		}
+		return contatosSelecionados;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

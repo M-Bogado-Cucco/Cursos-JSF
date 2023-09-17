@@ -1,0 +1,9 @@
+package yt_luiz_alberto.model;
+
+public class Conversation {
+	
+	public Conversation() {
+		
+	}
+
+}

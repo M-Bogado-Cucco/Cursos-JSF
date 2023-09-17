@@ -1,0 +1,176 @@
+Seguir este cronograma de cursos da Dev Media:
+1 - Curso Online de JSF (Java Server Faces)
+2 - O que e JSF  (2 vídeo aulas, concluído em 03/09/23 )
+3 - O que é mvc  (2 vídeo aulas, concluído em 03/09/23 )
+4 - jsf primeira aplicação ( 21 aulas )
+5 - jsf com primefaces
+6 - Primeiros Passos na JSF com Ajax (hamburgueria)
+7 - O que é hibernate
+8 - Primeira app java e hibernate
+
+
+http://localhost:8081/primeiroprojetojsf/devMedia_05_jsf/4-bloqueioTela/blockUI.jsf
+
+----------------------------------------------------------------------------------
+
+Cursos do you tube:
+1 - Canal: Luiz Alberto
+curso: Primeiros passos com JSF e Primefaces  ( ano: 2017 )
+http://localhost:8081/primeiroprojetojsf/yt_luiz_alberto/Cadastro.jsf
+
+Anotações deste curso:
+Aula 11:
+
+a)
+CDI: Contexts and Dependency Injection (Injeção de Contextos e Dependências)
+CDI Injeta dependências através de anotações
+
+b)
+bean: É uma classe java comum, com construtor público sem parâmetros,
+possui atributos e métodos getters e setters
+
+c)
+@Named: especifica que a classe é um bean cdi
+a classe deve ter o ".... implements Serializable " , diz que
+a classe pode ser serializada em bytes
+
+d) Escopos
+@DependentScoped
+ Escopo padrão definido por quem o injeta, quando não anotamos, automa
+ticamente nosso escopo é do tipo dependent
+ 
+
+@RequestScoped
+ Criado quando ocorre uma determinada requisição HTTP e destruído
+quando a resposta é dada ao cliente
+
+
+@SessionScoped
+ Fica ativo enquanto durar a sessão do usuário, um bom exemplo
+é um site de compras
+
+
+@ApplicationScoped
+ Compartilhado entre os usuários do sistema, permanece enquanto
+a aplicação estiver rodando, ex: num site de apostas de bolão,
+todos os usuários sabem a quantidade de cotas de cada bolão em tempo real
+
+
+@ConversationScoped
+ Existe durante determinado tempo de conversação, definido pelo
+programador através dos métodos begin( ) e end( ) de um
+objeto do tipo Conversation
+
+
+
+  
+--------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

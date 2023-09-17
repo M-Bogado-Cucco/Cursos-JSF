@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Adicionar Lembrete</title>
+	
+	<f:metadata>
+		<f:event type="preRenderView" listener="#{lembreteBean.init}" />
+	</f:metadata>
+	
+</h:head>
+
+<h:body>
+	<h3>Adicionar lembrete</h3>
+	<h:form>
+		<h:panelGrid columns="3">
+			<h:outputLabel value="Título:" />
+			<h:inputText id="titulo" value="#{lembreteBean.lembrete.titulo}" required="true">
+				<f:validateLength minimum="3" maximum="255"></f:validateLength>
+			</h:inputText>
+			<h:message for="titulo"></h:message>
+			
+			<h:outputLabel value="Descrição:" />
+			<h:inputTextarea id="descricao" value="#{lembreteBean.lembrete.descricao}"
+				required="true" >
+				<f:validateLength minimum="3" maximum="255"></f:validateLength>
+			</h:inputTextarea>
+			<h:message for="descricao"></h:message>
+			
+			<h:outputLabel value="Início:" />
+			<h:inputText id="data-inicio" value="#{lembreteBean.lembrete.dataInicio}" required="true">
+				<f:convertDateTime pattern="dd/MM/yyyy" timeZone="#{initParam.timezone}" />
+			</h:inputText>
+			<h:message for="data-inicio" />
+		
+		</h:panelGrid>
+		
+		<h:commandButton value="Enviar" action="#{lembreteBean.adicionar}" />
+		
+	</h:form>
+	
+	<h:link value="Voltar" outcome="home" />
+	
+</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

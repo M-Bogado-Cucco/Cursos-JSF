@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cursojsf/src/main/webapp/home.html&apos; to &apos;home.xhtml&apos;" description="Rename resource &apos;home.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/home.html" name="home.xhtml" stamp="1688856558843" updateReferences="true"/>
+</session>

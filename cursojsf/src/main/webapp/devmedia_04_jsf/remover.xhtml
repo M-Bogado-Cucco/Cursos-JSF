@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Remover Lembrete</title>
+	
+	<!-- viewparam, captura o parâmetro da linha 53 de index-04 -->
+	<f:metadata>
+		<f:viewParam name="lembrete" value="#{lembreteBean.lembrete.id}" />
+		<f:event type="preRenderView" listener="#{lembreteBean.lembretePorId}" />
+	</f:metadata>
+	
+</h:head>
+
+<h:body>
+	<h2>Deseja remover esse lembrete ? "<h:outputText value="#{lembreteBean.lembrete.titulo}" />"</h2>
+	
+	<h:messages />
+	
+	<h:form rendered="#{lembreteBean.lembrete.id != 0}">
+		<h:commandButton value="Confirmar" action="#{lembreteBean.remover}" />
+	</h:form>
+					
+	
+	<h:link value="Voltar" outcome="home" />
+	
+</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

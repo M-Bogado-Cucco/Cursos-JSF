@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Adicionar Pessoa</title>
+	
+	<f:metadata>
+		<f:event type="preRenderView" listener="#{pessoaBean.init}" />
+	</f:metadata>
+	
+</h:head>
+
+<h:body>
+	<h3>Adicionar pessoa</h3>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Nome" />
+			<h:inputText id="titulo" value="#{pessoaBean.pessoa.nome}" required="true">
+				<f:validateLength minimum="3" maximum="255"></f:validateLength>
+			</h:inputText>
+			<h:message for="nome"></h:message>
+			
+			<h:outputLabel value="Email" />
+			<h:inputTextarea id="descricao" value="#{pessoaBean.pessoa.email}"
+				required="true" >
+				<f:validateLength minimum="3" maximum="255"></f:validateLength>
+			</h:inputTextarea>
+			<h:message for="email"></h:message>
+			
+			
+		
+		</h:panelGrid>
+		
+		<h:commandButton value="Enviar" action="#{pessoaBean.adicionar}" />
+		
+	</h:form>
+	
+	<h:link value="Voltar" outcome="home" />
+	
+</h:body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

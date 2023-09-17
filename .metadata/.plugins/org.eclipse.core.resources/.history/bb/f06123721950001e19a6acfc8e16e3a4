@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+	<h:form id="form">
+		<h3>Carousel Galeria Horizontal</h3>		
+		<p:carousel pageLinks="4" autoPlayInterval="5000" rows="1"
+		effect="easeInStrong" circular="true" >
+		<p:graphicImage value="/img/perfil-1.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-2.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-3.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-4.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-5.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-6.jpg" width="320"/>
+		</p:carousel>
+		
+		<h3>Carousel Galeria Vertical</h3>
+		<p:carousel pageLinks="4" autoPlayInterval="5000" rows="1"
+		effect="easeInStrong" circular="true" vertical="true">
+		<p:graphicImage value="/img/perfil-1.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-2.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-3.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-4.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-5.jpg" width="320"/>
+		<p:graphicImage value="/img/perfil-6.jpg" width="320"/>
+		</p:carousel>
+		
+		
+	</h:form>
+</h:body>
+</html>

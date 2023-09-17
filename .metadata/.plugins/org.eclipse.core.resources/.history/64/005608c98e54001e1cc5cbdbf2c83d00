@@ -1,0 +1,91 @@
+package yt_luiz_alberto.controller;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.enterprise.context.Conversation;
+import javax.enterprise.context.ConversationScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import yt_luiz_alberto.model.Pessoa;
+
+
+@Named("bean")
+@ConversationScoped
+public class PessoaBean implements Serializable {
+	
+	
+	private static final long serialVersionUID = 1L;
+
+
+	private ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>() {
+
+		
+		private static final long serialVersionUID = 1L;
+
+		{
+			
+			add(new Pessoa(1, "Pessoa 1", "p1@mail.com"));
+		}
+		
+	};
+	
+	
+	private Pessoa pessoa = new Pessoa();
+	
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+		
+		
+	private void limpar() {
+		pessoa = new Pessoa();
+	}
+	
+
+	public List<Pessoa> getPessoas() {
+		return pessoas;
+	}
+	
+	
+	private Conversation conversation;
+	
+	public void adicionar() {
+		
+		if (pessoas.isEmpty()) {
+			conversation.begin();
+		}
+//		
+		pessoas.add(pessoa);
+		
+		limpar();
+		
+	}
+	
+	public void parar() {
+		conversation.end();
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
