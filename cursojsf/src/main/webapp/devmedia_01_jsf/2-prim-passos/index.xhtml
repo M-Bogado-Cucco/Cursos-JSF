@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- http://localhost:8080/primeiroprojetojsf/devmedia_01_jsf/2-prim-passos/index.jsf -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+	<h:outputLabel  value="#{controlePrincipal.mensagem}"/>
+	<h:form>
+		<h:commandLink action="sobre"
+		value="Sobre... navegação estática" /> <br/><br />
+		
+		<h:commandLink action="#{controlePrincipal.sobre}" 
+		value="Sobre... com navegação dinâmica" /> <br/>
+		
+		<h:commandLink action="#{controlePrincipal.sobreRedir}"
+		 value="Sobre..redir" /> <br/>
+		 
+		 <h:commandLink action="#{controlePrincipal.geraErro}"
+		 value="Erro" /><br/>
+		 
+		<h:commandLink action="#{controlePrincipal.geraErroGrave}"
+		 value="Erro grave" /><br/>		
+		  
+		<h:commandLink action="#{controlePrincipal.geraLogin}"
+		value="Login" /><br/>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- http://localhost:8080/primeiroprojetojsf/devmedia_01_jsf/2-prim-passos/compPart5.jsf -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Componentes5</title>
+</h:head>
+<h:body>
+
+	<h:form id="formulario" >
+		<h2>Componentes 5 - Principais componentes HTML do JSF, entrada de dados</h2>
+		<h:inputHidden value="#{controleEntrada.id}" id="id" />
+		<br/><br/>
+		<h:panelGrid columns="2">
+		
+			<f:facet name="header">Dados da Pessoa</f:facet>
+			<h:outputLabel value="Nome" for="nome" />
+			<h:inputText value="#{comtroleEntrada.nome}" />
+			
+			<h:column>
+				<div align="center">
+					<h:commandButton value="Processar" 
+					action="#{controleEntrada.processa()}" />
+				</div>
+			</h:column>
+		
+		</h:panelGrid>
+		
+		<h:commandButton value="Enviar" 
+		 action="#{controleComponentes.geraTexto}" id="btnEnviar" /> <br />
+	</h:form>
+	
+	<h:outputText value="#{controleEntrada.saida}" escape="false" /> <br/>
+	
+	<h:outputFormat value="Eu moro em {0}, {1}">
+		<f:param value="Passo fundo" />
+		<f:param value="Rio Grande do Sul" />
+	</h:outputFormat> <br /><br />
+	<h:graphicImage library="imagens" name="programador.jpeg" /> <br /><br />
+	<h:graphicImage value="/resources/imagens/programador.jpeg" width="400px" />
+	
+</h:body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

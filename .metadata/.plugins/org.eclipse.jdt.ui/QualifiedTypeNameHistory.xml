@@ -4,8 +4,6 @@
     <fullyQualifiedTypeName name="javax.faces.validator.FacesValidator"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="org.primefaces.event.SelectEvent"/>
-    <fullyQualifiedTypeName name="javax.faces.event.ActionEvent"/>
-    <fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
     <fullyQualifiedTypeName name="javax.faces.bean.ViewScoped"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.Instant"/>
@@ -35,12 +33,15 @@
     <fullyQualifiedTypeName name="javax.enterprise.context.Conversation"/>
     <fullyQualifiedTypeName name="javax.enterprise.context.ConversationScoped"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
-    <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
-    <fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
     <fullyQualifiedTypeName name="javax.inject.Inject"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
     <fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
     <fullyQualifiedTypeName name="javax.inject.Named"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="javax.faces.event.ActionEvent"/>
+    <fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
+    <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+    <fullyQualifiedTypeName name="javax.faces.bean.RequestScoped"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

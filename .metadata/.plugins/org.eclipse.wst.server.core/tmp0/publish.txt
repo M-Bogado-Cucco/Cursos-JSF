@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Sat Sep 16 22:28:52 BRT 2023
-org.eclipse.jst.jee.server\:cursojsf=/home/marcelobc/apps/java-alex-egidio/apache-tomcat-9.0.44/wtpwebapps/cursojsf

@@ -2,5 +2,8 @@
 <dirs>
     <entry loc="/usr/lib/jvm/java-17-oracle" stamp="1643215771866"/>
     <entry loc="/home/marcelobc/.sdkman/candidates/java/11.0.20.1-tem" stamp="1692805218000"/>
+    <entry loc="/home/bogado/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.8.v20230801-1951/jre" stamp="1692026167353"/>
+    <entry loc="/home/bogado/.sdkman/candidates/java/11.0.20-tem" stamp="1689717031000"/>
+    <entry loc="/home/bogado/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.8.v20230801-1951" stamp="1692026167353"/>
     <entry loc="/home/marcelobc/.sdkman/candidates/java/17.0.8-tem" stamp="1689713379000"/>
 </dirs>

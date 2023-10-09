@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<!-- http://localhost:8081/primeiroprojetojsf/devmedia_01_jsf/index.jsf -->
+
+<h:head>
+	<title>Listagem</title>
+</h:head>
+
+<h:body>
+	<h1>Lembretes</h1>
+	
+	<h:link value="Novo Lembrete" outcome="cadastro"></h:link>
+	
+	<h:dataTable id="tabelaNotas"
+	 value="#{notaBean.notas}" var="nota">
+	 
+	 <h:column>
+	 <f:facet name="header">Titulo</f:facet>
+	 	#{nota.titulo}
+	 </h:column>
+	 
+	 <h:column>
+	 <f:facet name="header">Descrição</f:facet>
+	 	#{nota.descricao}
+	 </h:column>
+	
+	</h:dataTable>
+</h:body>
+
+</html>

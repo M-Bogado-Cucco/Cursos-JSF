@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;compPart3.xhtml&apos; to &apos;compPart3.xhtml&apos;&#x0A;- Original project: &apos;cursojsf&apos;&#x0A;- Destination element: &apos;compPart3.xhtml&apos;&#x0A;- Original element: &apos;compPart3.xhtml&apos;" description="Copy file" element1="src/main/webapp/devmedia_01_jsf/2-prim-passos/compPart3.xhtml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1696348167540" target="/cursojsf/src/main/webapp/devmedia_01_jsf/2-prim-passos/compPart3.xhtml" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+127.0.0.1 - - [19/Sep/2023:16:08:56 -0300] "GET / HTTP/1.1" 404 763
+127.0.0.1 - - [19/Sep/2023:16:10:08 -0300] "GET /primeiroprojetojsf/devMedia_05_jsf/9-contextMenu/contextMenu.jsf HTTP/1.1" 404 682
+127.0.0.1 - - [19/Sep/2023:16:10:08 -0300] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [19/Sep/2023:16:17:30 -0300] "GET / HTTP/1.1" 404 763
+127.0.0.1 - - [19/Sep/2023:16:20:45 -0300] "GET /primeiroprojetojsf/devMedia_05_jsf/9-contextMenu/contextMenu.jsf HTTP/1.1" 404 682
+127.0.0.1 - - [19/Sep/2023:16:21:02 -0300] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [19/Sep/2023:16:21:02 -0300] "GET /favicon.ico HTTP/1.1" 404 762
